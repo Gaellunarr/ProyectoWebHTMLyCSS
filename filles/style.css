@@ -1,0 +1,21 @@
+nav.header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
+
+.header-image {
+    width: 250px;
+    height: 300px;
+}
+
+
+
+ul.nav___header {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
