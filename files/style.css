@@ -7,9 +7,11 @@
     background-color: #24252A;
 }
 
-body {
-    height: 100vh;
+html {
+    scroll-behavior: smooth;
 }
+
+
 
 .logo {
     cursor: pointer;
@@ -68,12 +70,13 @@ button:hover {
 .main-container {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 100vh;
     width: 100%;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     font-family: 'Chakra Petch', sans-serif;  
+    
     
 }
 
@@ -111,4 +114,9 @@ button:hover {
 
 .social-media i:hover {
     color: #0088a9;
+}
+
+section {
+    height: 100vh;
+
 }
