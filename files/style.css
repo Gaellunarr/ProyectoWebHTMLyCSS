@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+body {
+    height: 100vh;
+}
+
+.logo {
+    cursor: pointer;
+    height: 100px;
+    width: 290px;
+}
+
+li, a, button {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 15px;
+    
+}
+
+
+.header-nav-ul {
+    margin-right: 190px;
+}
+
+.header-nav-ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.header-nav-ul li a {
+    transition: all 0.3s ease 0s;
+}
+
+.header-nav-ul li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(45, 0, 169);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(69, 26, 188);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'Chakra Petch', sans-serif;  
+    
+}
+
+.main-container-h1-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.main-container-h1-p h1 {
+    font-size: 58px;
+}
+
+.main-container-h1-p p {
+    font-size: 19.4px;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
+.social-media i {
+    font-size: 30px; 
+}
+
+.social-media i {
+    transition: all 0.3s ease 0s;
+}
+
+.social-media i:hover {
+    color: #0088a9;
+}
