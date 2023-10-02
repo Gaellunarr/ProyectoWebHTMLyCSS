@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     background-color: #24252A;
+    font-family: 'Chakra Petch', sans-serif;  
 }
 
 html {
@@ -17,10 +18,10 @@ html {
     cursor: pointer;
     height: 100px;
     width: 290px;
+    
 }
 
 li, a, button {
-    font-family: 'Chakra Petch', sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
@@ -79,7 +80,6 @@ button:hover {
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    font-family: 'Chakra Petch', sans-serif;  
 
 }
 
@@ -131,6 +131,32 @@ section[id] {
 
 .about-me {
     display: flex;
-    align-content: center;
+    align-items: flex-start;
     justify-content: center;
+    gap: 40px;
+}
+
+.about-me-image {
+    border-radius: 20px;
+    height: 295.5px;
+    width: 230px;
+}
+
+.about-me-flex{
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   width: 400px;
+   color: white;
+   
+}
+
+.about-me-flex h2 {
+    color: #434be7;
+}
+
+.about-me-flex h3 {
+    
 }
