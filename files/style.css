@@ -4,9 +4,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
     font-family: 'Chakra Petch', sans-serif;  
 }
+
+h2 {
+    color: #434be7;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -80,6 +84,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     color: #ffffff;
+    background-color: #1E031A;
 
 }
 
@@ -123,6 +128,7 @@ button:hover {
 
 section {
     height: 100vh;
+    background-color: #1B0316;
 }
 
 section[id] {
@@ -134,29 +140,68 @@ section[id] {
     align-items: flex-start;
     justify-content: center;
     gap: 40px;
+    padding-top: 120px;
 }
 
 .about-me-image {
     border-radius: 20px;
-    height: 295.5px;
-    width: 230px;
+    height: 311px;
+    width: 240px;
 }
 
 .about-me-flex{
-   display: flex;
-   align-items: flex-start;
-   justify-content: center;
-   flex-direction: column;
-   flex-wrap: wrap;
-   width: 400px;
-   color: white;
-   
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    color: white;
+    gap: 8px;
 }
 
-.about-me-flex h2 {
-    color: #434be7;
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E031A;
+    padding-top: 120px;
 }
 
-.about-me-flex h3 {
-    
+.portfolio-container {
+    display: grid;
+    width: 80%;
+    height: 500px;
+    margin: 10px auto;
+    grid-template-columns: repeat(
+        auto-fit, 
+        minmax(
+            150px, 
+            1fr
+        )
+    );
+    grid-template-areas: 
+    "n1 n2"
+    "n3 n4"
+    ;
+    gap: 40px;
 }
+
+.item1 {
+    grid-area: n1;
+}
+
+.item2 {
+    grid-area: n2;
+}
+
+.item3 {
+    grid-area: n3;
+}
+
+.item4 {
+    grid-area: n4;
+}
+
+
