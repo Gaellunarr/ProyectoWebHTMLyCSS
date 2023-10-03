@@ -4,21 +4,28 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+    font-family: 'Chakra Petch', sans-serif;  
 }
 
-body {
-    height: 100vh;
+h2 {
+    color: #434be7;
 }
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header styles */
 
 .logo {
     cursor: pointer;
     height: 100px;
     width: 290px;
+    
 }
 
 li, a, button {
-    font-family: 'Chakra Petch', sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
@@ -31,6 +38,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px 20px 15px;
+    position: fixed;
+    width: 100%;
     
 }
 
@@ -65,16 +74,18 @@ button:hover {
     background-color: rgb(69, 26, 188);
 }
 
+/* Main content styles */
+
 .main-container {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 100vh; 
     width: 100%;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    font-family: 'Chakra Petch', sans-serif;  
-    
+    background-color: #1E031A;
+
 }
 
 .main-container-h1-p {
@@ -112,3 +123,120 @@ button:hover {
 .social-media i:hover {
     color: #0088a9;
 }
+
+/* Sections content styles */
+
+section {
+    height: 100vh;
+    background-color: #1B0316;
+}
+
+section[id] {
+    scroll-margin-top: 160px;
+}
+
+.about-me {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 120px;
+}
+
+.about-me-image {
+    border-radius: 20px;
+    height: 311px;
+    width: 240px;
+}
+
+.about-me-flex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    color: white;
+    gap: 8px;
+}
+
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E031A;
+    padding-top: 120px;
+}
+
+.portfolio-container {
+    display: grid;
+    width: 80%;
+    height: 500px;
+    margin: 10px auto;
+    grid-template-columns: repeat(
+        auto-fit, 
+        minmax(
+            150px, 
+            1fr
+        )
+    );
+    grid-template-areas: 
+    "n1 n2"
+    "n3 n4"
+    ;
+    gap: 40px;
+}
+
+.portfolio-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+}
+
+
+
+.item1 {
+    grid-area: n1;
+}
+
+.item2 {
+    grid-area: n2;
+}
+
+.item3 {
+    grid-area: n3;
+}
+
+.item4 {
+    grid-area: n4;
+}
+
+.skills-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 120px;
+
+ 
+}
+
+.Contact {
+    display: flex;
+    background-color: #1E031A;
+    height: 790px;
+}
+
+
+footer {
+    display: flex;
+    height: 72px;
+    background: #170312;
+    color: #ffffff;
+
+    align-items: center;
+    justify-content: center;
+  }
+ 
